@@ -87,6 +87,9 @@ const refresh = (req, res) => {
         }))
 }
 
+// @desc Logout
+// @route POST /auth/logout
+// @access Public - just to clear cookie if exists
 const logout = (req, res) => {
     const cookie = req.cookies
 
